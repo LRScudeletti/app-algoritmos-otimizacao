@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mochila Booleana</title>
+
+    <!-- Estilos -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo_paa.png" width="122" height="35" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Algoritmos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="atribuicao-disciplinas.html">Atribuição de Disciplinas</a>
+                            <a class="dropdown-item" href="mochila-fracionaria.html">Mochila Fracionária</a>
+                            <a class="dropdown-item" href="mochila-booleana.html">Mochila Booleana</a>
+                            <a class="dropdown-item" href="subsequencia-comum-maxima.html">Subsequência Comum Máxima</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="blank" href="Manual-Usuario.pdf">Manual do Usuário</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim menu de navegação -->
+
+    <!-- Conteúdo -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="div-faixa">
+                    <p class="h6 centralizar-texto-vertical">Algoritmo - Mochila Booleana</p>
+                </div>
+            </div>
+        </div>
+
+<!-- Divisor de colunas -->
+<div class="row vdivide linha-margem">
+
+        <!-- Coluna de cadastro -->
+        <div class="col-md-6">
+            <p class="h6 text-center">CADASTRO</p>
+
+            <!-- Formulário de cadastro -->
+            <form onsubmit="return false">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="txtProduto" class="form-control" placeholder="Produto" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="txtPeso" class="form-control" placeholder="Peso" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="txtValor" class="form-control" placeholder="Valor" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-primary margem-bottom20" onclick="cadastrarProduto()">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Grid de cadastro -->
+            <div class="row margem-top10">
+                <div class="col-md-12">
+                    <table class="table table-striped listaProdutos">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Peso</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">X</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- O grid de cadastro é exibido aqui -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna de execução -->
+        <div class="col-md-6">
+            <p class="h6 text-center">CALCULAR</p>
+
+            <!-- Formulário de execução -->
+            <form onsubmit="return false">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <input type="text" id="txtCapacidadeMaxima" class="form-control" placeholder="Capacidade Máxima" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-primary margem-bottom20" onclick="calcularMB()">Executar</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="divResultado" class="col-md-12">
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="divValorTotal" class="col-md-12 margem-bottom10">
+                        <!-- O valor total é exibido aqui -->
+
+                    </div>
+                </div>
+
+                <!--
+                <div class="row">
+                    <div id="graficoContainer" style="height: 300px; width: 100%;">
+                        <!-- O gráfico é exibido aqui -->
+                <!--
+                    </div>
+                </div>-->
+            </form>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <!-- Fim Conteúdo -->
+
+    <!-- Rodapé -->
+    <footer class="footer bg-primary">
+        <div class="container">
+            <p class="m-0 text-center text-white">Direitos Reservados &copy; 2018</p>
+        </div>
+    </footer>
+    <!-- Fim rodapé -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/mochila-booleana.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atribuição de Disciplinas</title>
+
+    <!-- Estilos -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo_paa.png" width="122" height="35" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Algoritmos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="atribuicao-disciplinas.html">Atribuição de Disciplinas</a>
+                            <a class="dropdown-item" href="mochila-fracionaria.html">Mochila Fracionária</a>
+                            <a class="dropdown-item" href="mochila-booleana.html">Mochila Booleana</a>
+                            <a class="dropdown-item" href="subsequencia-comum-maxima.html">Subsequência Comum Máxima</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="blank" href="Manual-Usuario.pdf">Manual do Usuário</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim menu de navegação -->
+
+    <!-- Conteúdo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="div-faixa">
+                    <p class="h6 centralizar-texto-vertical">Algoritmo - Atribuição de Disciplinas</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="row margem-top10">
+                <div class="col-md-12 text-center" >
+                    <div class="alert alert-primary">
+                        <h4>Selecione os professores e as disciplinas que deseja atribuir</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margem-top10">
+                <div class="col-md-6 text-center">
+                    <h5>Professores</h5>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h5>Disciplinas</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row vdivide linha-margem">
+                    <!-- Professores -->
+                    <div class="col-md-6 divCheckbox">
+
+                        <!-- Teste checkbox -->
+                        <label class="containerCheckBox">Ana
+                            <input type="checkbox" name="chk_profs" value="Ana">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerCheckBox">Paulo
+                            <input type="checkbox" name="chk_profs" value="Paulo">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerCheckBox">Carlos
+                            <input type="checkbox" name="chk_profs" value="Carlos">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="containerCheckBox">Maísa
+                            <input type="checkbox" name="chk_profs" value="Maísa">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Maria
+                            <input type="checkbox" name="chk_profs" value="Maria">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Rogério
+                            <input type="checkbox" name="chk_profs" value="Rogério">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Lucas
+                            <input type="checkbox" name="chk_profs" value="Lucas">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Pedro
+                            <input type="checkbox" name="chk_profs" value="Pedro">
+                            <span class="checkmark"></span>
+                        </label>
+                        <!-- Fim Teste checkbox -->
+                            
+                            <!-- Table Professor -->
+                            <!--
+                            <table class="table table-striped listaProdutos">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Professores</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col">1</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Ana">Ana
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">2</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Carlos">Carlos
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">3</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Paulo">Paulo
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">4</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Maísa">Maísa
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">5</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Maria">Maria
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">6</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Rogério">Rogério
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">7</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Lucas">Lucas
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">8</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_profs" value="Pedro">Pedro
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            -->
+                    </div>
+
+                    <!-- Disciplinas -->
+                    <div class="col-md-6 divCheckbox">
+
+                        <label class="containerCheckBox">Desenvolvimento de Software
+                            <input type="checkbox" name="chk_disc" value="Desenvolvimento de Software">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Sistemas Operacionais
+                            <input type="checkbox" name="chk_disc" value="Sistemas Operacionais">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Instalação e Manutenção de computadores
+                            <input type="checkbox" name="chk_disc" value="Instalação e Manutenção de computadores">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Programação Web
+                            <input type="checkbox" name="chk_disc" value="Programação Web">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">WordPress
+                            <input type="checkbox" name="chk_disc" value="WordPress">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="containerCheckBox">Excel
+                            <input type="checkbox" name="chk_disc" value="Excel">
+                            <span class="checkmark"></span>
+                        </label>
+                            <!--
+                            <table class="table table-striped listaProdutos">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Disciplinas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="col">1</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Desenvolvimento de Software">Desenvolvimento de Software
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">2</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Sistemas Operacionais">Sistemas Operacionais
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">3</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Instalação e Manutenção de computadores">Instalação e Manutenção de computadores
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">4</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Programação Web">Programação Web
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">5</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Desenvolvimento mobile">Desenvolvimento mobile
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">6</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Desenvolvimento de jogos">Desenvolvimento de jogos
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">7</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="WordPress">WordPress
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col">8</td>
+                                        <td scope="col">
+                                            <input type="checkbox" name="chk_disc" value="Excel">Excel
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            -->
+                    </div>
+            </div>
+                
+            <div class="row margem-top10">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <button id="btn_gerar_formulario" name="btn_gerar_formulario" class="btn btn-primary btn-lg btn-block margem-bottom20">Concluir Seleção</button>    
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+    
+            <div class="row margem-top10 divOculta" id="divForm">
+
+                <div class="col-md-12">
+                    <div class="row margem-top10">
+                        <div class="col-md-12 text-center" >
+                            <div class="alert alert-primary">
+                                <h4>Insira o nível de conhecimento de cada professor para as devidas disciplinas</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row margem-top10">
+                        <div class="col-md-12">
+                        <!-- Professores e Disciplinas-->
+                            <div class="container" id="divProf">
+                                <!-- Cabeçalho -->
+                                <div class="row">
+                                    <div class="col"></div>
+                                    <div class="col">
+                                        <h5><b>Disciplinas</b></h5>
+                                    </div>
+                                </div>
+                                <div class="row margem-top10" id="cabecalhoProf">
+                                    <div class="col">
+                                        <h5><b>Professores</b></h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margem-top10">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <button name="btn-calcular" class="btn btn-primary btn-lg btn-block margem-bottom20" id="btn-calcular">Calcular</button>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+    
+            </div>
+
+            <!-- Resultado -->
+            <div class="row margem-top10 divOculta" id="divResultado">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">Resultado</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <table id="tabelaResultado" class="table table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Professores</th>
+                                        <th>Disciplinas</th>
+                                        <th>Índices</th>
+                                        <th>Valores</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Fim Conteúdo -->
+
+    <!-- Rodapé -->
+    <footer class="footer bg-primary">
+        <div class="container">
+            <p class="m-0 text-center text-white">Direitos Reservados &copy; 2018</p>
+        </div>
+    </footer>
+    <!-- Fim rodapé -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/atribuicao-disciplinas.js"></script>
+</body>
+
+</html>
